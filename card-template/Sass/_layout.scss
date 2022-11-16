@@ -1,0 +1,84 @@
+@import 'components';
+
+body {
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+
+    .edit-ecard {
+
+        .show-box,
+        .template-background {
+            width: 100%;
+            padding: 20px;
+            border: 3px solid rgb(55, 55, 255);
+            background-color: #ccc;
+            border-radius: 30px;
+        }
+
+        .show-box {
+
+            .ecard-before,
+            .ecard-after {
+                width: 400px;
+                height: 236px;
+                // border: 1px solid #000;
+                border-radius: 15px;
+                // background-color: #fff;
+                background-image: url('https://thumb.ac-illust.com/b5/b596e7c9d6952f205ac48622a7ff70ff_t.jpeg');
+            }
+
+            .ecard-before {
+                .logo-contain {
+                    background: url('../images/background-before-card.png') no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                }
+            }
+
+            .ecard-after {
+                background-image: url('https://thumb.ac-illust.com/b5/b596e7c9d6952f205ac48622a7ff70ff_t.jpeg');
+
+                .ecard-after-left {
+                    width: 70%;
+                    // background-color: #fff;
+                    border-radius: 15px 0 0 15px;
+
+                    .title-ecard {
+                        font-size: 0.75rem;
+                    }
+
+                    .QR-code-contain {
+                        width: 80px;
+                        height: 80px;
+                        // border: 1px solid #000;
+                        margin: 0 0 15px 15px;
+                        background-image: url('../images/QR-container.png');
+                        background-size: cover;
+                        background-size: center center;
+
+
+                        #card {
+                            margin: -55px 0 0 5px;
+                            width: 0px;
+                            height: 20px;
+                            position: relative;
+                            background-size: cover;
+
+                            #qr-code {
+                                position: absolute;
+                                left: 0px;
+                                top: 60px;
+                            }
+                        }
+                    }
+                }
+                .ecard-after-right {
+                    width: 30%;
+                    border-radius: 0 15px 15px 0;
+                    // background: url('https://www.pngarts.com/files/2/Pattern-Transparent-Image.png'), no-repeat;
+                    background-size: cover;
+                    background-position: left center;
+                }
+            }
+        }
+    }
+}

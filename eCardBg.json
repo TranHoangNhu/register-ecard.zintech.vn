@@ -1,0 +1,49 @@
+{
+  "backgroundChange": [
+    {
+      "id": 1,
+      "name": "background_1",
+      "srcImg": "images/card-template/background_1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "background_2",
+      "srcImg": "images/card-template/background_2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "background_3",
+      "srcImg": "images/card-template/background_3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "background_4",
+      "srcImg": "images/card-template/background_4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "background_5",
+      "srcImg": "images/card-template/background_5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "background_6",
+      "srcImg": "images/card-template/background_6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "background_7",
+      "srcImg": "images/card-template/background_7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "background_8",
+      "srcImg": "images/card-template/background_8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "background_9",
+      "srcImg": "images/card-template/background_9.jpg"
+    }
+  ]
+}

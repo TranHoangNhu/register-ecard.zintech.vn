@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome v6.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="././css/main.min.css"> 
+</head>
+
+<body>
+    <div id="app">
+        <div class="container-fluid">
+            <h1 class="text-center pt-5 fw-bold text-white">TRANG DESIGN VÀ CHỌN MẪU</h1>
+            <section class="edit-ecard mt-5 d-flex">
+                <div id="printableArea" class="show-box d-flex justify-content-evenly align-items-center flex-wrap">
+                    <!-- TỶ LỆ 1 : 2.75-->
+                    <div class="ecard-before d-flex justify-content-center align-items-center">
+                        <div class="logo-contain d-flex w-100">
+                            <img class="logo-ecard mx-auto" src="././images/logo-zintech.png" alt="logo-ecard"
+                                width="109">
+                        </div>
+                    </div>
+                    <div class="ecard-after d-flex">
+                        <div class="ecard-after-left d-flex flex-column justify-content-between">
+                            <div class="title-ecard d-flex flex-column">
+                                <span class="text-center pt-5 fw-bold">CÔNG TY CÔNG NGHỆ ZINTECH</span>
+                                <hr class="mx-5" width="180" />
+                            </div>
+                            <div class="QR-code-contain">
+                                <div id="card">
+                                    <div id="overlay"></div>
+                                    <div id="qr-code"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ecard-after-right">
+
+                        </div>
+                    </div>
+                    <div class="change_QR">
+                        <input type="hidden" name="templateid" id="templateid" value="0">
+                    </div>
+                    <div class="change_logo">
+                        <label class="fw-bold">Thay đổi logo ecard:</label> <br />
+                        <input type="file" class="mt-2" onchange="handlerChangeLogo()" id="logoChange" />
+
+                    </div>
+                </div>
+                <div class="template-background">
+                    <div class="container">
+                        <!-- <h2 class="text-center my-5">-CHANGE BACKGROUND CARD-</h2> -->
+                        <div class="row row-cols-1 row-cols-md-3 g-4" id="renderBgImgApi"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"
+        integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="././js/card-template/dom-to-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="././js/card-template/changeImgBackground.js"></script>
+    <script src="././js/card-template/script.js"></script>
+</body>
+
+</html>
