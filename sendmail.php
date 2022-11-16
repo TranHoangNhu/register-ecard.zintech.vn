@@ -107,13 +107,13 @@ try {
     </style>
     </head>
     <body>
-    <div class="thankyou-page">
-    <div class="_header">
+    <div class="thankyou-page row">
+    <div class="_header col-12">
         <div class="logo">
             <img src="https://codexcourier.com/images/banner-logo.png" alt="">
         </div>
     </div>
-    <div class="_body">
+    <div class="_body col-12">
         <div class="_box">
             <h2>
                 <strong>Chúc mừng Anh Tuân</strong> đã đăng ký gói dịch vụ thẻ ecard của công ty zintech chúng tôi.
