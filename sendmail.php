@@ -1,3 +1,14 @@
+<?php 
+require('registerecard.php');
+if(isset($_POST['tenkh']))
+{
+    $tenkh = $_POST['tenkh'];
+}
+if(isset($_POST['email']))
+{
+    $email = $_POST['email'];
+}
+?>
 <?php
 include "./PHPMailer/src/PHPMailer.php";
 include "./PHPMailer/src/Exception.php";
@@ -25,7 +36,7 @@ try {
 
 	//Recipients
 	$mail->setFrom('tran.hoang.nhu.1997@gmail.com', 'Nhu (Zintech)');
-	$mail->addAddress('phamhung11081997@gmail.com', 'Nhu Test');     // Add a recipient
+	$mail->addAddress($email, 'Nhu Test');     // Add a recipient
 	// $mail->addAddress('ellen@example.com');               // Name is optional
 	// $mail->addReplyTo('info@example.com', 'Information');
 	// $mail->addCC('tran.hoang.nhu.1997@gmail.com');
@@ -37,7 +48,7 @@ try {
 
 	//Content
 	$mail->isHTML(true);                                  // Set email format to HTML
-	$mail->Subject = 'Test Mail ko spam from Nhu';
+	$mail->Subject = 'CÔNG TY TNHH GIẢI PHÁP CÔNG NGHỆ ZINTECH';
 	$mail->Body    = <<<STR
     <head>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -116,10 +127,10 @@ try {
     <div class="_body col-12">
         <div class="_box">
             <h2>
-                <strong>Chúc mừng Anh Tuân</strong> đã đăng ký gói dịch vụ thẻ ecard của công ty zintech chúng tôi.
+                <strong>Chúc mừng $tenkh</strong> đã đăng ký gói dịch vụ thẻ ecard của công ty zintech chúng tôi.
             </h2>
             <p>
-                Vui lòng mời anh tuân đến trụ sở chính của công ty chúng tôi để hoàn tất thủ tục và nhận thẻ ecard.
+                Vui lòng mời $tenkh đến trụ sở chính của công ty chúng tôi để hoàn tất thủ tục và nhận thẻ ecard.
             </p>
         </div>
     </div>
