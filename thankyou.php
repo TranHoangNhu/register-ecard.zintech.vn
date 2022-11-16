@@ -28,3 +28,6 @@
 		<!--//login-->
 </body>
 </html>
+<?php
+	include('sendmail.php');
+?>
