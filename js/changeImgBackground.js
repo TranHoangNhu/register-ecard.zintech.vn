@@ -30,7 +30,7 @@ function renderBgImgList(arrProduct) {
              <img src=${prod.srcImg} alt="" width="100%" height="130"/>
              <div class="card-body">
                <h5 class="card-title fw-bold">${prod.name}</h5>
-               <button type="button" onclick="changeBgImgHandler(${prod.id})" class="btn btn-warning fw-bold text-white float-end mt-3">Đổi hình nền</button>
+               <button type="button" onclick="changeBgImgHandler(${prod.id})" class="btn btn-warning fw-bold text-white float-end mt-3">Chọn mẫu</button>
              </div>
            </div>
         </div>
@@ -48,12 +48,13 @@ function renderBgImgList(arrProduct) {
 function changeBgImgHandler(idClick) {
   const beforeBgStyle = document.querySelector(".ecard-before").style;
   const afterBgStyle = document.querySelector(".ecard-after").style;
-  beforeBgStyle.backgroundImage = `url('images/card-template/background_${idClick}.jpg')`;
+  beforeBgStyle.backgroundImage = `url('images/card-template/background_mattruoc_${idClick}.png')`;
   beforeBgStyle.backgroundSize = "cover";
   beforeBgStyle.backgroundPosition = "center center";
-  afterBgStyle.backgroundImage = `url('images/card-template/background_${idClick}.jpg')`;
+  afterBgStyle.backgroundImage = `url('images/card-template/background_matsau_${idClick}.png')`;
   afterBgStyle.backgroundSize = "cover";
   afterBgStyle.backgroundPosition = "center center";
+
   document.querySelector("#templateid").value = idClick.toString();
 }
 /* 

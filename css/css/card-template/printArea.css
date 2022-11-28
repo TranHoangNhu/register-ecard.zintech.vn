@@ -1,0 +1,48 @@
+body .ecard-before,
+body .ecard-after {
+  width: 400px;
+  height: 236px;
+  border-radius: 15px;
+  background-image: url("https://thumb.ac-illust.com/b5/b596e7c9d6952f205ac48622a7ff70ff_t.jpeg");
+}
+body .ecard-before .logo-contain {
+  background: url("../images/background-before-card.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+body .ecard-after {
+  background-image: url("https://thumb.ac-illust.com/b5/b596e7c9d6952f205ac48622a7ff70ff_t.jpeg");
+}
+body .ecard-after .ecard-after-left {
+  width: 70%;
+  border-radius: 15px 0 0 15px;
+}
+body .ecard-after .ecard-after-left .title-ecard {
+  font-size: 0.75rem;
+}
+body .ecard-after .ecard-after-left .QR-code-contain {
+  width: 80px;
+  height: 80px;
+  margin: 0 0 15px 15px;
+  background-image: url("../images/QR-container.png");
+  background-size: cover;
+  background-size: center center;
+}
+body .ecard-after .ecard-after-left .QR-code-contain #card {
+  margin: -55px 0 0 5px;
+  width: 0px;
+  height: 20px;
+  position: relative;
+  background-size: cover;
+}
+body .ecard-after .ecard-after-left .QR-code-contain #card #qr-code {
+  position: absolute;
+  left: 0px;
+  top: 60px;
+}
+body .ecard-after .ecard-after-right {
+  width: 30%;
+  border-radius: 0 15px 15px 0;
+  background-size: cover;
+  background-position: left center;
+}

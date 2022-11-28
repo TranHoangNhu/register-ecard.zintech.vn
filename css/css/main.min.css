@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+body .edit-ecard .show-box,
+body .edit-ecard .template-background {
+  width: 100%;
+  padding: 20px;
+  border: 3px solid #3737ff;
+  border-radius: 30px;
+}
+body .edit-ecard .show-box .ecard-before,
+body .edit-ecard .show-box .ecard-after {
+  width: 400px;
+  height: 236px;
+  border-radius: 15px;
+}
+body .edit-ecard .show-box .ecard-before .logo-contain {
+  background: url("../images/background-before-card.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+body .edit-ecard .show-box .ecard-after {
+  background-image: url("../images/background_sau_1.png");
+  background-size: cover;
+  background-size: top top;
+}
+body .edit-ecard .show-box .ecard-after .ecard-after-left {
+  width: 70%;
+  border-radius: 15px 0 0 15px;
+}
+body .edit-ecard .show-box .ecard-after .ecard-after-left .title-ecard {
+  font-size: 0.75rem;
+}
+body .edit-ecard .show-box .ecard-after .ecard-after-left .QR-code-contain {
+  width: 50px;
+  height: 50px;
+  margin: 0 0 15px 15px;
+  background-image: url("../images/QRCode-img.png");
+  background-size: cover;
+  background-size: center center;
+}
+body
+  .edit-ecard
+  .show-box
+  .ecard-after
+  .ecard-after-left
+  .QR-code-contain
+  #card {
+  margin: -55px 0 0 5px;
+  width: 0px;
+  height: 20px;
+  position: relative;
+  background-size: cover;
+}
+body
+  .edit-ecard
+  .show-box
+  .ecard-after
+  .ecard-after-left
+  .QR-code-contain
+  #card
+  #qr-code {
+  position: absolute;
+  left: 0px;
+  top: 60px;
+}
+body .edit-ecard .show-box .ecard-after .ecard-after-right {
+  width: 30%;
+  border-radius: 0 15px 15px 0;
+  background-size: cover;
+  background-position: left center;
+}
