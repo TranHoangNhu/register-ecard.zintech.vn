@@ -19,20 +19,21 @@ body .edit-ecard .template-background {
 }
 body .edit-ecard .show-box .ecard-before,
 body .edit-ecard .show-box .ecard-after {
-background-image:url("../images/card-template/background_mattruoc_1.png");  
-background-size: contain;
+  background-image: url("../images/card-template/background_mattruoc_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center center;
   width: 376px;
   height: 236px;
   border-radius: 15px;
 }
 body .edit-ecard .show-box .ecard-before .logo-contain {
-  background-image:url("../images/card-template/background_mattruoc_1.png");
+  background-image: url("../images/card-template/background_mattruoc_1.png");
   background-size: contain;
   background-position: center center;
 }
 body .edit-ecard .show-box .ecard-after {
-  background-image:url("../images/card-template/background_matsau_1.png");
+  background-image: url("../images/card-template/background_matsau_1.png");
   background-size: contain;
   background-position: center center;
 }

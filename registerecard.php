@@ -274,7 +274,7 @@ if ($insert == 1) {
 						Tôi muốn đăng ký thẻ
 					</label>
 				</div>
-				<div class="row">
+				<div class="row mx-auto">
 					<div class="col-md-12">
 						<input type="hidden" name="templateid" id="templateid" value="1" />
 						<div id="myDIV" style="display: none;">

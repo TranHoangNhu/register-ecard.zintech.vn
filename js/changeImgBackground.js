@@ -27,10 +27,10 @@ function renderBgImgList(arrProduct) {
     html += `
         <div class="col">
            <div class="card h-100 card2">
-             <img src=${prod.srcImg} alt="" width="100%" height="130"/>
-             <div class="card-body">
-               <h5 class="card-title fw-bold">${prod.name}</h5>
-               <button type="button" onclick="changeBgImgHandler(${prod.id})" class="btn btn-warning fw-bold text-white float-end mt-3">Chọn mẫu</button>
+             <img src=${prod.srcImg} alt="" width="100%" style="height: auto;" class="rounded-top"/>
+             <div class="card-body d-flex justify-content-center px-2">
+              <!--  <h5 class="fw-bold px-2 align-middle">${prod.name}</h5> -->
+               <button type="button" onclick="changeBgImgHandler(${prod.id})" class="btn btn-warning text-white">Chọn mẫu</button>
              </div>
            </div>
         </div>
@@ -136,7 +136,7 @@ function printPageArea(areaID) {
 
   // WinPrint.document.close();
   // WinPrint.focus();
-  
+
   // WinPrint.close();
 }
 /* 
